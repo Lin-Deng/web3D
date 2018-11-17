@@ -1,0 +1,28 @@
+<div id="main">
+  <div>
+    <div >
+      <button title="添加标养架" (click)="addFrame()">
+        添加标养架
+      </button>
+      <input title="标养架编号" placeholder="标养架编号" [(ngModel)]=frameNumber>
+      <input title="X轴距离" placeholder="X轴距离" [(ngModel)]=frameOffsetX>
+      <input title="Z轴距离" placeholder="Z轴距离" [(ngModel)]=frameOffsetZ>
+    </div>
+    <div>
+      <button title="添加试块"  (click)="addTestBlock()">
+        添加试块
+      </button>
+      <input title="标养架编号" placeholder="标养架编号" [(ngModel)]=frameNumberAdb>
+      <select title="试块类型"  [(ngModel)]=blockType >
+        <option disabled>试块类型</option>
+        <option *ngFor="let b of blockTypes" [ngValue]="b" >
+          {{b}}
+        </option>
+      </select>
+      <input title="层" placeholder="层" [(ngModel)]=blockLayer>
+      <input title="试块索引" placeholder="试块索引" [(ngModel)]=blockIndex>
+    </div>
+  </div>
+  <div id="container">
+  </div>
+</div>
