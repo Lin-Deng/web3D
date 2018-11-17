@@ -37,3 +37,11 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+/src/assets/banzi.jpg
+/src/assets/banzi.png
+/src/assets/block.mtl
+/src/assets/block.obj
+/src/assets/cube.mtl
+/src/assets/cube.obj
+/src/assets/framework.mtl
+/src/assets/framework.obj
